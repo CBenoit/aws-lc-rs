@@ -1,7 +1,7 @@
 [submodule "aws-lc-sys/aws-lc"]
 	path = aws-lc-sys/aws-lc
-	url = https://github.com/aws/aws-lc.git
-	branch = main
+	url = https://github.com/CBenoit/aws-lc.git
+	branch = cmake-3.6
 [submodule "aws-lc-fips-sys/aws-lc"]
 	path = aws-lc-fips-sys/aws-lc
 	url = https://github.com/aws/aws-lc.git
