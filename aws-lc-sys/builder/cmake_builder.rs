@@ -194,6 +194,15 @@ impl CmakeBuilder {
                     cmake_cfg.define("CMAKE_SYSTEM_PROCESSOR", proc);
                 }
             }
+
+            cmake_cfg.define("NDK_PROC_aarch64_ABI", "arm64-v8a");
+            cmake_cfg.define("NDK_PROC_armv7-a_ABI", "armeabi-v7a");
+            cmake_cfg.define("NDK_PROC_armv6_ABI", "armeabi-v6");
+            cmake_cfg.define("NDK_PROC_armv5te_ABI", "armeabi");
+            cmake_cfg.define("NDK_PROC_i686_ABI", "x86");
+            cmake_cfg.define("NDK_PROC_mips_ABI", "mips");
+            cmake_cfg.define("NDK_PROC_mips64_ABI", "mips64");
+            cmake_cfg.define("NDK_PROC_x86_64_ABI", "x86_64");
         }
 
         if target_vendor() == "apple" && target_os().to_lowercase() == "ios" {
